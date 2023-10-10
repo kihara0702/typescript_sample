@@ -1,4 +1,4 @@
-import { a00 } from "./a00";
+import { a00 } from "./ts01_class";
 import { a01 } from "./a01";
 
 a00();

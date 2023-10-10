@@ -1,0 +1,10 @@
+#!/bin/sh
+docker run \
+    --name note_ts_samples \
+    --user ts-user \
+    -it \
+    --rm \
+    -v /workspace/projects/node-ts-samples:/work \
+    -w /work \
+    dev-ts:2 \
+    bash

@@ -2,7 +2,7 @@
   "name": "node-starter",
   "private": true,
   "scripts": {
-    "start": "ts-node ./src/.",
+    "start:ts01": "ts-node ./src/ts01_class.ts",
     "start:watch": "ts-node-dev .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,5 +21,8 @@
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@type-challenges/utils": "^0.1.1"
   }
 }
