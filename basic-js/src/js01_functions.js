@@ -1,3 +1,4 @@
+export const ja01 = "js01";
 //関数
 function fun01() {
     console.log("fun01 called");

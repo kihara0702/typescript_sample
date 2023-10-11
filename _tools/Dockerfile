@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update
 RUN apt-get install -y apt-utils sudo locales tzdata \
-    iputils-ping net-tools jq tzdata curl python3 gcc make \
+    iputils-ping net-tools jq tzdata curl python3 gcc make sqlite3 \
     g++ git\
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*

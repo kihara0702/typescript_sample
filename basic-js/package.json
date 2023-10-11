@@ -12,6 +12,7 @@
     "start:js07": "ts-node ./src/js07_obj_merge.js",
     "start:js08": "ts-node ./src/js08_shortcircuit_nulllishCoalescing_optionalChaining.js",
     "start:js09": "ts-node ./src/js09_this.js",
+    "start:js10": "ts-node ./src/js10_functional.js",
     "start:watch": "ts-node-dev .",
     "lint": "run-s lint:*",
     "lint:eslint": "eslint src/**/*.ts",
@@ -34,5 +35,8 @@
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.2.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "readline-sync": "^1.4.10",
+    "rxjs": "^7.8.1"
+  }
 }

@@ -44,5 +44,44 @@ AppDataSource.initialize()
     const data02 = await qb02.getOne();
     console.log(data02);
     console.log(data02.firstName);
+
+    //PKのないテーブル
+    // console.log('Inserting a new test into the database...');
+    // const test = new Test();
+    // test.firstName = 'Timber';
+    // test.lastName = 'Saw';
+    // test.age = 25;
+    // await AppDataSource.manager.save(test);
+    // console.log('Saved a new test with firstName: ' + test.firstName);
+
+    // console.log('Loading test from the database...');
+    // const tests = await AppDataSource.manager.find(Test);
+    // console.log('Loaded users: ', tests);
+
+    // //QueryBuilder01
+    // console.log('QueryBuilder02');
+    // const repo03 = new Repository<Test>(Test, AppDataSource.manager);
+    // const qb03 = repo03
+    //   .createQueryBuilder('test')
+    //   .select(['test.firstName', 'test.lastName', 'test.age'])
+    //   .where('test.firstName = :firstName', { firstName: test.firstName });
+    // console.log(qb01.getSql());
+    // console.log(qb01.getParameters());
+    // const data03 = await qb03.getOne();
+    // console.log(data03);
+    // console.log(data03.firstName);
+
+    //
+    // const rawResult01 = await AppDataSource.manager.query(`
+    // CREATE TABLE test (
+    //   firstName TEXT,
+    //   lastName TEXT,
+    //   age INTEGER)`);
+
+    const rawResult02 = await AppDataSource.manager.query(
+      "insert into test values('aaaa','bbbb',20)"
+    );
+    const rawResult03 = await AppDataSource.manager.query("SELECT * FROM test");
+    console.log(rawResult03);
   })
   .catch((error) => console.log(error));
