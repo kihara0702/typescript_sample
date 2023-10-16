@@ -14,8 +14,12 @@ const reader = function* () {
 };
 
 const ins = rxjs.from(reader());
+
 rxjs.lastValueFrom(
     ins.pipe(
+        rxjs.tap((v) => {
+            v !== ans.toString() && console.log("はずれ");
+        }),
         rxjs.filter((v) => v === ans.toString()),
         rxjs.tap(() => console.log("正解")),
         rxjs.take(1)

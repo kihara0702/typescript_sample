@@ -13,6 +13,10 @@
     "start:js08": "ts-node ./src/js08_shortcircuit_nulllishCoalescing_optionalChaining.js",
     "start:js09": "ts-node ./src/js09_this.js",
     "start:js10": "ts-node ./src/js10_functional.js",
+    "start:js11": "ts-node ./src/js11_closure.js",
+    "start:js12": "ts-node ./src/js12_generator.js",
+    "start:js13": "ts-node ./src/js13_iteration.js",
+    "start:js14": "ts-node ./src/js14_async.js",
     "start:watch": "ts-node-dev .",
     "lint": "run-s lint:*",
     "lint:eslint": "eslint src/**/*.ts",
@@ -36,6 +40,9 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
+    "@types/ramda": "^0.29.6",
+    "fp-ts": "^2.16.1",
+    "ramda": "^0.29.1",
     "readline-sync": "^1.4.10",
     "rxjs": "^7.8.1"
   }
