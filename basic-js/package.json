@@ -42,6 +42,7 @@
   "dependencies": {
     "@types/ramda": "^0.29.6",
     "fp-ts": "^2.16.1",
+    "fp-ts-contrib": "^0.1.29",
     "ramda": "^0.29.1",
     "readline-sync": "^1.4.10",
     "rxjs": "^7.8.1"

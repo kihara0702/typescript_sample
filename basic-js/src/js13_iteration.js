@@ -24,10 +24,10 @@ console.log(rtn02);
 //fp-ts 遅延評価しない
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const FPA = require("fp-ts/lib/Array");
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const FPP = require("fp-ts/lib/function");
+// eslint-disable-next-line @typescript-eslint/no-var-requires, import/order
+const FPF = require("fp-ts/lib/function");
 
-const fpTsArr = FPP.pipe(
+const fpTsArr = FPF.pipe(
     builtInArr,
     FPA.map((v) => {
         console.log(`map + 1:${v}`);
@@ -42,6 +42,29 @@ console.log(fpTsArr);
 // map + 1:3
 // fp-ts
 // [ 2 ]
+
+// //fp-ts-contrib takeがうまくいかない
+// // eslint-disable-next-line @typescript-eslint/no-var-requires, import/order
+// const FPCL = require("fp-ts-contrib/lib/List");
+// // eslint-disable-next-line @typescript-eslint/no-var-requires, import/order
+// const FPCF = require("fp-ts-contrib/lib/filterA");
+
+// console.log("fp-ts-contrib-start");
+// const fpTscArr = FPF.pipe(
+//     FPCL.fromArray(builtInArr),
+//     FPCL.map((v) => {
+//         console.log(`map + 1:${v}`);
+//         return v + 1;
+//     }),
+//     FPCL.take(1)
+// );
+// console.log("fp-ts-contrib");
+// console.log(fpTscArr);
+// // map + 1:1
+// // map + 1:2
+// // map + 1:3
+// // fp-ts
+// // [ 2 ]
 
 //ramba 遅延評価しない
 // eslint-disable-next-line @typescript-eslint/no-var-requires, import/order
