@@ -73,7 +73,7 @@ import { pipe } from "fp-ts/lib/function";
     }
 }
 
-//monado
+//monad
 {
     const process1 = (s: string) =>
         pipe(
