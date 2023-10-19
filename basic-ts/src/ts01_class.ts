@@ -1,3 +1,4 @@
+export const a = 0;
 {
     class Foo {
         private name: string;

@@ -37,3 +37,23 @@ fsp.readFile("./data/01.txt", { encoding: "utf-8" })
     const data3 = await fsp.readFile("./data/03.txt", { encoding: "utf-8" });
     console.log(`async/await ${data3}`);
 })();
+
+//promise（自作）
+const getOdd = () => {
+    return new Promise((resolve, reject) => {
+        const n = Math.floor(Math.random() * 3);
+        if (n % 2 === 0) {
+            resolve(n);
+        } else {
+            reject(-1);
+        }
+    });
+};
+(async () => {
+    const data1 = await getOdd().catch((_res) => console.log("error 1"));
+    console.log(`mypromise ${data1}`);
+    const data2 = await getOdd().catch((_res) => console.log("error 2"));
+    console.log(`mypromise ${data2}`);
+    const data3 = await getOdd().catch((_res) => console.log("error 3"));
+    console.log(`mypromise ${data3}`);
+})();

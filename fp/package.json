@@ -2,8 +2,7 @@
   "name": "node-starter",
   "private": true,
   "scripts": {
-    "start:zod01": "ts-node ./src/zod01_intersection_schema.ts",
-    "start:zod02": "ts-node ./src/zod02_optional_unwrap.ts",
+    "start:ts01": "ts-node ./src/ts01_class.ts",
     "start:watch": "ts-node-dev .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,10 +20,9 @@
     "prettier": "^3.0.3",
     "ts-node": "^10.9.1",
     "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.2.2",
-    "zod": "^3.22.4"
+    "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@type-challenges/utils": "^0.1.1"
+    "fp-ts": "^2.16.1"
   }
 }

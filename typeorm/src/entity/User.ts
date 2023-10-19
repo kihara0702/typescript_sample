@@ -14,3 +14,18 @@ export class User {
   @Column()
   age: number;
 }
+
+@Entity()
+export class Test {
+  @PrimaryGeneratedColumn()
+  dummy: number;
+
+  @Column()
+  firstName: string;
+
+  @Column()
+  lastName: string;
+
+  @Column()
+  age: number;
+}

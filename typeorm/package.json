@@ -3,6 +3,7 @@
    "private": true,
    "scripts": {
       "start": "ts-node src/.",
+      "start:to01": "ts-node src/to01_sysdate.ts",
       "start:watch": "ts-node-dev .",
       "lint": "run-s lint:*",
       "lint:eslint": "eslint src/**/*.ts",

@@ -1,6 +1,7 @@
 {
   "name": "node-starter",
   "private": true,
+  "type": "module",
   "scripts": {
     "start:ts01": "ts-node ./src/ts01_class.ts",
     "start:watch": "ts-node-dev .",
