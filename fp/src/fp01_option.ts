@@ -11,40 +11,26 @@ import { pipe } from "fp-ts/lib/function";
     // { _tag: 'None' }
 
     //functor
-    const process1 = pipe(
-        hasValue,
-        O.map((v) => {
-            console.log("add _");
-            return v + "_";
-        }),
-        O.map((v) => {
-            console.log("add @");
-            return v + "@";
-        }),
-        O.map((v) => {
-            console.log("add #");
-            return v + "#";
-        })
-    );
-    console.log(process1);
-
-    const process2 = pipe(
-        noneValue,
-        O.map((v) => {
-            console.log("add _");
-            v + "_";
-        }),
-        O.map((v) => {
-            console.log("add @");
-            v + "@";
-        }),
-        O.map((v) => {
-            console.log("add #");
-            v + "#";
-        })
-    );
-
-    console.log(process2);
+    const process = (op: O.Option<string>) => {
+        return pipe(
+            op,
+            O.map((v) => {
+                console.log("add _");
+                return v + "_";
+            }),
+            O.map((v) => {
+                console.log("add @");
+                return v + "@";
+            }),
+            O.map((v) => {
+                console.log("add #");
+                return v + "#";
+            }),
+            O.getOrElse(() => "none")
+        );
+    };
+    console.log(1, process(hasValue));
+    console.log(2, process(noneValue));
 }
 //applicative
 {

@@ -2,7 +2,7 @@
   "name": "node-starter",
   "private": true,
   "scripts": {
-    "start:ts01": "ts-node ./src/ts01_class.ts",
+    "start:fp01": "ts-node ./src/fp01_option.ts",
     "start:watch": "ts-node-dev .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

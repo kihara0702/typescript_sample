@@ -1,7 +1,7 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const fs = require("node:fs");
+const fs = require("fs");
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const fsp = require("node:fs/promises");
+const fsp = require("fs/promises");
 
 //callback
 fs.readFile("./data/01.txt", { encoding: "utf-8" }, (_err, data) => {
