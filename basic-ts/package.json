@@ -3,7 +3,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start:ts01": "ts-node ./src/ts01_class.ts",
+    "start:ts01": "node --loader ts-node/esm ./src/ts01_type_annotation.ts",
+    "start:ts02": "node --loader ts-node/esm ./src/ts02_Index_signature.ts",
+    "start:ts03": "node --loader ts-node/esm ./src/ts03_enum.ts",
+    "start:ts04": "node --loader ts-node/esm ./src/ts04_literalType.ts",
+    "start:ts05": "node --loader ts-node/esm ./src/ts05_union.ts",
+    "start:ts06": "node --loader ts-node/esm ./src/ts06_tuple.ts",
     "start:watch": "ts-node-dev .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
