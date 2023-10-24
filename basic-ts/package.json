@@ -9,6 +9,7 @@
     "start:ts04": "node --loader ts-node/esm ./src/ts04_literalType.ts",
     "start:ts05": "node --loader ts-node/esm ./src/ts05_union.ts",
     "start:ts06": "node --loader ts-node/esm ./src/ts06_tuple.ts",
+    "start:ts07": "node --loader ts-node/esm ./src/ts07_any_unknown_never.ts",
     "start:watch": "ts-node-dev .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -29,6 +30,8 @@
     "typescript": "^5.2.2"
   },
   "dependencies": {
-    "@type-challenges/utils": "^0.1.1"
+    "@type-challenges/utils": "^0.1.1",
+    "rxjs": "^7.8.1",
+    "zod": "^3.22.4"
   }
 }

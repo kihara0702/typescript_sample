@@ -86,4 +86,25 @@ console.log(6, v06_2);
 // 6 { name: 'john do' }
 
 //関数の型定義
-// TODO
+// コールシグネチャ
+// 省略番
+type callSig1 = (name: string, age: number) => { name: string; age: number };
+const fn07: callSig1 = (name, age) => {
+    return {
+        name,
+        age,
+    };
+};
+console.log(7, fn07("john do", 20));
+// 7 { name: 'john do', age: 20 }
+
+// 完全版
+type callSig2 = { (name: string, age: number): { name: string; age: number } };
+const fn08: callSig2 = (name, age) => {
+    return {
+        name,
+        age,
+    };
+};
+console.log(8, fn08("john do", 20));
+// 8 { name: 'john do', age: 20 }

@@ -13,7 +13,7 @@
             ],
             "program": "${file}",
             "console": "integratedTerminal",
-            "runtimeArgs": ["-r", "ts-node/register"],
+            "runtimeArgs": ["--loader", "ts-node/esm", "-r", "ts-node/register"]
         }
     ]
 }
