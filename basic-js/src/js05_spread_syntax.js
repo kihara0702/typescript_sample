@@ -13,6 +13,22 @@ console.log(arrCp01);
 //    3, 4, 5
 // ]
 
+//  配列のマージ
+const arr02 = [...[1, 2, 3], ...[], ...[4, 5, 6]];
+console.log(arr02);
+// [ 1, 2, 3, 4, 5, 6 ]
+
+const arr03 = [
+    // eslint-disable-next-line @typescript-eslint/no-array-constructor
+    ...new Array(1, 2, 3),
+    // eslint-disable-next-line @typescript-eslint/no-array-constructor
+    ...new Array(),
+    // eslint-disable-next-line @typescript-eslint/no-array-constructor
+    ...new Array(4, 5, 6),
+];
+console.log(arr03);
+// [ 1, 2, 3, 4, 5, 6 ]
+
 const obj = {
     name: "john do",
     age: 20,
