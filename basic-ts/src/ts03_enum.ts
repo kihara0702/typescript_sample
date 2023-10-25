@@ -1,4 +1,4 @@
-export const ts02 = "ts02"; //dummy
+export const ts03 = "ts03"; //dummy
 // // そもそも不変のオブジェクトリテラルを使えと怒られる
 // enum Color {
 //     Red,

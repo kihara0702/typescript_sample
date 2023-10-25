@@ -1,0 +1,38 @@
+{
+  "name": "node-starter",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start:ts01": "node --loader ts-node/esm ./src/ts01_type_annotation.ts",
+    "start:ts02": "node --loader ts-node/esm ./src/ts02_Index_signature.ts",
+    "start:ts03": "node --loader ts-node/esm ./src/ts03_enum.ts",
+    "start:ts04": "node --loader ts-node/esm ./src/ts04_literalType.ts",
+    "start:ts05": "node --loader ts-node/esm ./src/ts05_union.ts",
+    "start:ts06": "node --loader ts-node/esm ./src/ts06_tuple.ts",
+    "start:ts07": "node --loader ts-node/esm ./src/ts07_any_unknown_never.ts",
+    "start:watch": "ts-node-dev .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
+    "eslint": "^8.50.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-typescript-enum": "^2.1.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.0.3",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@nestjs/cli": "^10.2.0",
+    "@type-challenges/utils": "^0.1.1",
+    "rxjs": "^7.8.1",
+    "zod": "^3.22.4"
+  }
+}
