@@ -4,6 +4,7 @@
   "scripts": {
     "start:zod01": "ts-node ./src/zod01_intersection_schema.ts",
     "start:zod02": "ts-node ./src/zod02_optional_unwrap.ts",
+    "start:zod03": "ts-node ./src/zod03_transform.ts",
     "start:watch": "ts-node-dev .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -61,11 +61,10 @@ if (maybeId !== undefined) {
 
 {
     // タグ付きユニオンのある世界
-    type status = start | complete | fail;
-
     type start = { tag: "start" };
     type complete = { tag: "complete"; result: string };
     type fail = { tag: "fail"; error: string };
+    type status = start | complete | fail;
 
     let proc: status = { tag: "start" };
     if (proc.tag === "start") {
